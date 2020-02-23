@@ -5,11 +5,34 @@
 .side_bar {
   width: 300px;
   float: left;
+  color: white;
+
   .header {
    background-color: #253141;
    height: 100px;
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   padding: 0 20px;
+
+  &__user {
+   display: inline-block;
+   font-size: 16px;
+   font-weight: bold;
   }
-  .list {
+  &__lists {
+    display: inline-block;
+    float: right;
+    .list {
+      display: inline-flex
+    }
+    .icon {
+      color: white;
+    }
+   }
+  }
+  .groups {
    background-color: #2f3e51;
    height: calc(100vh - 100px);
    }
