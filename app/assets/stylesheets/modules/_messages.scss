@@ -1,3 +1,33 @@
 * {
   box-sizing: border-box;
 }
+
+.side_bar {
+  width: 300px;
+  float: left;
+  .header {
+   background-color: #253141;
+   height: 100px;
+  }
+  .list {
+   background-color: #2f3e51;
+   height: calc(100vh - 100px);
+   }
+  }
+
+.chat {
+  width: calc(100% - 300px);
+  float: right;
+  .header {
+  background-color: #ffffff;
+  height: 100px;
+  }
+  .message {
+    background-color: #FAFAFA;
+    height: calc( 100vh - 100px - 90px);
+  }
+  .form {
+    background-color: #d2d2d2;
+    height: 90px;
+  }
+}
