@@ -1,39 +1,24 @@
 .chat
 
- .header
-  .left-header
-   .left-header__title
-    test
-    %ul.left-header__members 
-     Member:
-     %li.member 
-     masa
-  .right-header
-   Edit
+  .header
+    .left-header
+      .left-header__title
+        test
+        %ul.left-header__members 
+        Member:
+        %li.member 
+        -
+    .right-header
+      = link_to "Edit", edit_group_path(params[:group_id]), method: :get
 
- .messages
-  .message
-   .up-message
-    .up-message__name
-     masa
-    .up-message__date
-     2019/02/23
-   .low-message
-    .low-message__content
-     おはよう
-  .message
-   .up-message
-    .up-message__name
-     masa
-    .up-message__date
-     2019/02/23
-   .low-message
-    .low-message__content
-     今日は夜から雨
- .form
-  .input-box
-   %input{type: "text",class: "input-box__text", placeholder: "type a message"}
-   %label{class: "input-box__image"}
-    =icon('fas', 'image')
-    %input{type: "file",class: "input-box__image__file"}
-  %input{type: "submit", class:"submit-btn"}
+  .messages
+    = render @messages
+
+  .form
+    = form_for [@group, @message] do |f|
+      .input-box
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('fas', 'image')
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'submit-btn'
