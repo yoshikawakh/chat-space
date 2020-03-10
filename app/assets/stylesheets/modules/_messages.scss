@@ -139,9 +139,6 @@
         right: 10px;
         cursor: pointer;
         font-size: 20px;
-        &__file {
-          display: none;
-        }
       }
     }
     .submit-btn {
@@ -154,6 +151,13 @@
         color: white;
         cursor: pointer;
       }
+    .new_message {
+      display: flex;
+    }
+    .hidden {
+      display: none;
+    }
+
     }
 }
 
