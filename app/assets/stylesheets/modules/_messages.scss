@@ -139,10 +139,6 @@
         right: 10px;
         cursor: pointer;
         font-size: 20px;
-        &fas far-image {
-          display: inline-block;
-
-        }
       }
     }
     .submit-btn {
@@ -157,6 +153,9 @@
       }
     .new_message {
       display: flex;
+    }
+    .hidden {
+      display: none;
     }
 
     }
