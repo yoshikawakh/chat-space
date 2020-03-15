@@ -40,9 +40,11 @@
      padding: 20px 0 40px;
      &__name {
        font-size: 15px;
+       color: white;
    }
      &__message {
        font-size: 11px;
+       color: white;
 
    }
   }
@@ -92,7 +94,7 @@
     padding: 46px 40px 0 ;
     .message {
       
-      .up-message {
+      .upper-message {
        display: flex;
        &__name {
        color: #333333;
@@ -104,7 +106,7 @@
        padding-left: 10px;
      }
     }
-      .low-message {
+      .lower-message {
        margin-top: 10px;
        &__content {
        font-size: 14px;
@@ -128,7 +130,6 @@
 
       &__text {
         height: 50px;
-        width: 100%;
         color: #434a54;
         border-style: none;
         padding: 0 40px 10px;
