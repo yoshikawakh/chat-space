@@ -37,6 +37,7 @@
    height: calc(100vh - 100px);
    padding: 0 20px;
    .group {
+     overflow: scroll;
      padding: 20px 0 40px;
      &__name {
        font-size: 15px;
@@ -92,7 +93,8 @@
     background-color: #FAFAFA;
     height: calc( 100vh - 100px - 90px);
     padding: 46px 40px 0 ;
-    .message {
+    overflow: scroll;
+    
       
       .upper-message {
        display: flex;
@@ -113,11 +115,9 @@
        color: #434a54;
        margin-bottom: 40px;
      }
-    }
    }
   }
   .form {
-    display: flex;
     background-color: #DDDDDD;
     height: 90px;
     padding: 20px 50px 20px 40px;
@@ -152,11 +152,11 @@
         color: white;
         cursor: pointer;
       }
-    .new_message {
-      display: flex;
-    }
     .hidden {
       display: none;
+    }
+    .new_message {
+      display: flex;
     }
 
     }
