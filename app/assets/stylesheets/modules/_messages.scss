@@ -34,6 +34,7 @@
   }
   .groups {
    background-color: #2f3e51;
+   text-decoration: none;
    height: calc(100vh - 100px);
    padding: 0 20px;
    .group {
@@ -49,6 +50,9 @@
 
    }
   }
+  .group a {
+    text-decoration: none;
+  }
  }
 }
 
@@ -58,6 +62,7 @@
 
   .header {
   background-color: #ffffff;
+  color: #38aef0;
   height: 100px;
   padding: 0 40px;
   .left-header {
@@ -86,9 +91,13 @@
      font-size: 16px;
      color: #38aef0;
      border: 1px solid 
+  
+   }
+   .right-header a{
+     text-decoration: none;
+     color: #38aef0;
    }
   }
-
   .messages {
     background-color: #FAFAFA;
     height: calc( 100vh - 100px - 90px);
@@ -132,7 +141,8 @@
         width: 100%;
         color: #434a54;
         border-style: none;
-        padding: 0 40px 10px;
+        padding: 0 10px 0;
+  
       }
       &__image {
         position: absolute;
